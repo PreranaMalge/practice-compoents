@@ -1,0 +1,46 @@
+<!-- Task to center align the 3 containers all to the each other. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="container">Container 1</div>
+        <div class="container">Container 2</div>
+        <div class="container">Container 3</div>
+    </div>
+
+    <style>
+        .parent {
+            display: flex;
+            justify-content: center;
+            /* centers the children horizontally */
+            align-items: center;
+            /* centers the children vertically */
+            height: 100vh;
+            /* for full screen height centering */
+            gap: 20px;
+            /* optional: space between the containers */
+        }
+
+        .container {
+            width: 150px;
+            height: 150px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</body>
+
+</html>
+
+<!-- pseudo elements and pseudo classes -->
+<!-- synthetic events -->

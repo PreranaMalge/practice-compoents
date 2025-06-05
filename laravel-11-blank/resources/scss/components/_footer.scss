@@ -1,0 +1,168 @@
+// ================== FOOTER SECTION START =====================
+@use "./variable" as *;
+/* FOOTER MENU START */
+.footer {
+    background-color: #010e28;
+
+    .footer_address {
+        font-size: 16px;
+        color: $grey-100;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .footer-padding {
+        padding-left: 50px;
+        @media screen and (max-width: $breakpoint-large) {
+            padding-left: 12px;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                color: $grey-100;
+                transition: all 0.3s ease-in-out;
+                display: inline-block;
+                svg {
+                    g {
+                        path {
+                            transition: all 0.4s ease-in-out;
+                        }
+                    }
+                }
+                &:hover {
+                    color: $blue;
+
+                    svg {
+                        g {
+                            path {
+                                stroke: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_search {
+        .form-control::-webkit-input-placeholder {
+            color: $grey-100;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .news_letter_signup {
+            background: transparent;
+            padding: 14px 20px;
+            border: 2px solid $grey-100;
+            margin-top: 30px !important;
+            border-radius: 4px;
+            color: $grey-100;
+            font-weight: 600;
+            font-size: 15px;
+
+            &:focus {
+                background: transparent;
+                box-shadow: none;
+                border: 2px solid #ffffff40;
+            }
+        }
+
+        .footer_news_letter_button {
+            position: absolute;
+            right: 15px;
+            background: 0 0;
+            padding: 0;
+            color: $white;
+            border: unset;
+            font-size: 16px;
+            top: 28%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+            @media (min-width: 993px) and (max-width: 1200px) {
+                padding-bottom: 15px !important;
+            }
+        }
+
+        .btn {
+            --bs-btn-border-color: unset;
+        }
+
+        .custom_check {
+            @media (max-width: $breakpoint-medium) {
+                margin-bottom: 30px;
+            }
+
+            .form-check-input {
+                background-color: transparent !important;
+                border: 1px solid $grey-100 !important;
+                box-shadow: none !important;
+                height: 16px !important;
+                width: 16px !important;
+                cursor: pointer;
+            }
+
+            .form-check-label {
+                font-size: 15px !important;
+                color: $grey-100;
+                font-weight: 500;
+                cursor: pointer;
+                a {
+                    color: $purple;
+                }
+            }
+
+            .form-check-input:checked {
+                background-color: transparent !important;
+                border: 1px solid #202430 !important;
+            }
+        }
+    }
+    .footer-bottom {
+        border-top: 1px solid #1f1d48;
+        padding-top: 14px;
+        margin-bottom: 0;
+
+        p {
+            font-size: 14px !important;
+            color: $grey;
+        }
+
+        a {
+            text-decoration: none;
+            color: $grey;
+
+            &:hover {
+                transform: none;
+            }
+        }
+
+        .col-xl-4 a {
+            color: $grey;
+            font-size: 14px;
+
+            &:hover {
+                color: $purple;
+            }
+        }
+        ul li:nth-child(2)::before {
+            content: "";
+            width: 1px;
+            height: 12px;
+            background: $grey-100;
+            display: inline-block;
+            margin-right: 18px;
+            vertical-align: middle;
+        }
+    }
+}
+
+// ============== FOOTER SECTION ENDS ===========================

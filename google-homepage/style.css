@@ -1,0 +1,94 @@
+.body {
+    background-color: rgb(60, 60, 60);
+   
+}
+
+.container {
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    float: right;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #df0b52; 
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: -32px;
+    right:-188px;
+    align-content: center;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.conical,
+.gb-icon {
+    cursor: pointer;
+}
+
+.account-icon {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.gb_F{
+    width: 30px;
+
+}
+
+
+.heading h1{
+    color:white;
+    font-size: 65px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 25px;
+    width: 50%;
+    margin: 71px 198px;
+    padding: 10px 20px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-icon,
+.mic-icon,
+.lens-icon {
+    cursor: pointer;
+}
+
+.lens-icon {
+    width: 28px;
+    height: 28px;
+}

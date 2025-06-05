@@ -1,0 +1,141 @@
+@use "./variable";
+
+.header_area_one {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    top: 0;
+    transition: all 0.5s linear;
+    background-color: white !important;
+
+    @media (max-width: variable.$breakpoint-large) {
+        background-color: variable.$white !important;
+    }
+
+    .navbar-toggler {
+        box-shadow: none !important;
+        border: unset;
+        #hamburger {
+            list-style-type: none;
+            padding-top: 15px;
+            margin-right: -8px;
+
+            .hamburger {
+                margin-top: 4px;
+                height: 2px;
+                width: 23px;
+                background-color: variable.$dark-blue !important;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+                border-radius: 20px;
+            }
+
+            &.open {
+                li {
+                    &:nth-child(1) {
+                        transform: translateY(4px) rotate(45deg);
+                        transition-delay: 0s !important;
+                    }
+
+                    &:nth-child(2) {
+                        opacity: 0;
+                        transition-delay: 0s !important;
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(-8px) rotate(-45deg);
+                        transition-delay: 0s !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+
+            li {
+                &:nth-child(1) {
+                    transition-delay: 0.1s !important;
+                }
+
+                &:nth-child(2) {
+                    transition-delay: 0.2s !important;
+                }
+
+                &:nth-child(3) {
+                    transition-delay: 0.3s !important;
+                    width: 60% !important;
+                }
+            }
+        }
+    }
+
+    .nav-bg-none {
+        padding: 0px 5px;
+    }
+
+    .menu {
+        align-items: center;
+        .nav-item {
+            margin-left: 30px;
+            .nav-link {
+                color: variable.$black;
+                transition: all 0.5s ease-in-out;
+                font-size: 15px;
+                font-weight: 600;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    transform: scaleX(0);
+                    border-bottom: 3px solid variable.$dark-blue;
+                    transition: transform 0.3s;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+
+    &.navbar_fixed {
+        background-color: variable.$white;
+        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+
+        .nav-bg-none {
+            padding: 0px 5px;
+            margin-top: unset;
+            box-shadow: unset !important;
+        }
+
+        .menu {
+            .nav-item {
+                margin-left: 30px;
+                .nav-link {
+                    color: variable.$black;
+                    transition: all 0.5s ease-in-out;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    // WHITE BACKGROUND FOR THE NAV ITEMS IN MOBILE VIEW
+    .nav-menu {
+        @media (max-width: variable.$breakpoint-large) {
+            background-color: variable.$white;
+            .menu {
+                margin-left: auto !important;
+                .nav-item {
+                    margin-left: unset;
+                    .nav-link {
+                        color: variable.$black;
+                        text-align: center;
+                        margin: 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+    // END OF THE SECTION
+}

@@ -1,0 +1,84 @@
+@use "./variable" as variable;
+
+// =========================== SERVICES SECTION ============================
+
+.services {
+    .row {
+        div:not(:last-child) {
+            z-index: 1 !important; // Apply to all but the last div
+        }
+    }
+
+    #globeCanvas {
+        height: 180vh;
+        margin-top: -450px;
+        margin-bottom: -500px;
+        position: absolute;
+    }
+
+    /* Mobile styles (up to 768px width) */
+    @media (max-width: 768px) {
+        #globeCanvas {
+            height: 200vh;
+            right: 80% !important;
+            margin-top: 0px;
+        }
+    }
+
+    /* desktop with 1366x768px screen to 1390x768px */
+    @media (min-width: 1366px) and (max-width: 1390px) {
+        #globeCanvas {
+            height: 190vh;
+            right: -30% !important;
+            margin-top: -250px;
+        }
+    }
+
+    /* Desktop styles (1025px and above) */
+    @media (min-width: 1391px) and (max-width: 3840px) {
+        #globeCanvas {
+            right: -35% !important;
+            margin-top: -450px;
+        }
+    }
+
+    .card {
+        border: 0;
+        padding: 15px;
+        height: 100%;
+        box-shadow: 0px 0px 20px #0e0e0e9f;
+        border-radius: unset;
+        background-color: #142033c0;
+        color: variable.$white;
+        transition: all 1s ease;
+
+        &.ui-ux-card {
+            &:hover svg g path {
+                stroke: rgb(0, 0, 0) !important;
+                fill: none !important;
+            }
+        }
+
+        &:hover {
+            background-color: #ffffffe0;
+            color: variable.$black;
+            transform: scale(1.04);
+
+            svg g path {
+                fill: variable.$black;
+            }
+
+            svg g circle {
+                stroke: variable.$black;
+            }
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+}
+
+// =========================== SERVICES SECTION END ============================

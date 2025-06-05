@@ -1,0 +1,14 @@
+.container {
+  background-color: purple;
+  height: 1000px;
+  width: 1000px;
+  align-items: center;
+  justify-content: center;
+}
+.container .inner {
+  justify-content: center;
+  align-items: center;
+}
+.container .inner h1 {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

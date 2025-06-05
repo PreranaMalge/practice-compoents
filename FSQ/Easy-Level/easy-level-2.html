@@ -1,0 +1,63 @@
+<!-- Full Stack Mock-> Easy Level
+
+Create an 8 * 8 chessboard UI using html, css and js. Each box size will be 20px*20px. Write modular code so that it is easier to extend. Modular means reusable and less of repetition -->
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modular Chessboard</title>
+ <style>
+    #chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 20px);
+  grid-template-rows: repeat(8, 20px);
+  width: 160px;
+  height: 160px;
+  border: 2px solid #333;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.black {
+  background-color: #000;
+}
+
+ </style>
+</head>
+<body>
+  <div id="chessboard"></div>
+  <script>
+    function createChessBoard(containerId, size = 8) {
+  const board = document.getElementById(containerId);
+  board.innerHTML = ''; // Clear existing
+
+  for (let row = 0; row < size; row++) {
+    for (let col = 0; col < size; col++) {
+      const square = document.createElement('div');
+      square.classList.add('square');
+
+      // Alternate color logic
+      const isBlack = (row + col) % 2 === 1;
+      square.classList.add(isBlack ? 'black' : 'white');
+
+      board.appendChild(square);
+    }
+  }
+}
+
+// Initialize chessboard
+createChessBoard('chessboard', 8);
+
+  </script>
+</body>
+</html>

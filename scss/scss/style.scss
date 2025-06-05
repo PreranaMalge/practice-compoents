@@ -1,0 +1,16 @@
+// Define a variable for the primary color
+$primary-color: #3498db;
+
+// Style the body
+body {
+  font-family: Arial, sans-serif;
+  background-color: lighten($primary-color, 40%);
+  margin: 0;
+  padding: 20px;
+}
+
+// Style headings using the variable
+h1 {
+  color: $primary-color;
+  text-align: center;
+}

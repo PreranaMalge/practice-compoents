@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .body{
+            background-color: #F3EFFE;
+            /* background-color: rgb(249, 248, 255); */
+        }
+        .blog-title {
+            color: #3a3a3a;
+            font: 30px Ubuntu, sans-serif;
+            margin: 0 0 15px
+        }
+
+        .posts {
+            background: linear-gradient(to right, #01c9c9, #764ba2);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        p{
+            color:#727272;
+            font:16px Ubuntu, sans-serif;
+        }
+        .card-image{
+            display: flex;
+            gap:20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            border: none;
+        }
+        .line{
+            width: 50%;
+            height: 2px;
+            /* background-color: #01c9c9; */
+            background: linear-gradient(to right, #01c9c9, #764ba2);
+            
+        }
+        .card a{
+            text-decoration: none;
+            color:purple;
+            border-radius: 20px;
+            padding: 10px 20px;
+            border: 1px solid purple;
+        }
+        .card a:hover{
+            /* background:linear-gradient(to right, #0f7cc5, #764ba2); */
+            background: linear-gradient(to right, #01c9c9, #764ba2);
+            color: white;
+        }
+        .card-title:hover{
+            background: linear-gradient(to right, #01c9c9, #764ba2);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .card img{
+            height:300px;
+            width:300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="blog-title text-center fw-bold fs-1">Latest Blog <span class="posts">Posts</span></h2>
+        <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur repellendus dolores deleniti sed quia
+            hic velit debitis consequatur corrupti, cumque sunt illum ex vero quidem omnis dignissimos, cupiditate, non
+            esse?</p>
+        <div class="card-image ">
+            <div class="card" style="width: 22rem;">
+                <img src="img1.jpg" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h5 class="card-title">Simple Proactives that will help you get better every...</h5>
+                  <div class="line mb-3 "></div>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis vitae blanditiis explicabo esse expedita nam sed autem vel laboriosam.</p>
+                  <a href="#" class="btn btn-outline-info fw-bold mt-2">Read More</a>
+                </div>
+            </div>
+            <div class="card" style="width: 22rem;">
+                <img src="img2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">This Place Really Place for Awesome Moment</h5>
+                  <div class="line mb-3"></div>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis vitae blanditiis explicabo esse expedita nam sed autem vel laboriosam.</p>
+                  <a href="#" class="btn btn-outline-info fw-bold mt-2">Read More</a>
+                </div>
+              </div>
+              <div class="card" style="width: 22rem;">
+                <img src="img3.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Frigilla leactus honcus anteom mode vehicul</h5>
+                  <div class="line mb-3"></div>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis vitae blanditiis explicabo esse expedita nam sed autem vel laboriosam.</p>
+                  <a href="#" class="btn btn-outline-info fw-bold mt-2">Read More</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
