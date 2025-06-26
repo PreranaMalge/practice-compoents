@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Variables in JS</h1>
+    <script>
+        //let,const => have block scope.
+        //var => have function scope.
+
+        // 1.block scope
+        {
+            let a=2;
+            const b=4;
+            var c= 3; //var accessible outside the block.
+            console.log(a);   //2
+            console.log(b);   //4
+        }
+        // let and const have block scope that means they are accessible only within that block,not outside the block.
+        
+        console.log(c);
+
+        // 2.function scope
+
+        function abc(){
+            let a='wow';
+            const pi = 3.14;
+            var  b=9;
+
+            console.log(a);  //=>wow
+            console.log(b);  // => 9
+            console.log(pi); //=>3.14
+        }
+
+       
+        abc();
+    </script>
+</body>
+</html>

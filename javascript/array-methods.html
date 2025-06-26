@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Methods</h1>
+
+    <script>
+        var arr=[1,2,3,4,5];
+
+        //push()=> insert element at the last position.
+        arr.push(6);
+        console.log(arr);
+
+        //pop()=>delete element at the last position
+        arr.pop();
+        console.log(arr);
+
+        var arr2 = [11,22,33,44,55];
+        //unshift()=>insert element at the beginning
+        arr2.unshift(77);
+        console.log(arr2);
+
+        //shift()=>delete element at the beginning.
+        arr2.shift();
+        console.log(arr2);
+
+        //indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+        console.log(arr.indexOf(2));
+
+        //array concatination
+        //1.using spread operator
+
+        console.log([...arr,...arr2]);
+        console.log(typeof([...arr,...arr2]));
+
+        //using inBuild method
+        console.log(arr.concat(arr2));
+
+        
+        
+    </script>
+</body>
+</html>

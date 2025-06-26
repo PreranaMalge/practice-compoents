@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.heading{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+
+}
+.nav ul li{
+    list-style-type: none;
+   
+}
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#button{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.carousel-item-1{
+    background-image: url("https://thumbs.dreamstime.com/b/beautiful-new-home-exterior-clear-evening-provides-setting-luxurious-34711767.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.carousel-item-2{
+    background-image: url("https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.carousel-item-3{
+    background-image: url("https://t3.ftcdn.net/jpg/04/27/70/64/360_F_427706432_OTNX01bqkZttcIX9sht4SxvjBm6xJHEX.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.item-1 .para{
+    background-color: #fff;
+
+}
+.para{
+    background-color: #fff;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 6px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: 300px;
+    top: 150px;
+}
+.para em{
+    color: #f35525;
+}
+.heading1{
+    font-size: 62px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 72px;
+    width: 50%;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    position: relative;
+    top: 150px;
+}
+.accordion-button::after {
+    display: none !important;
+  }
+
+  .para1{
+    font-size: 15px;
+    color: #aaa;
+    font-weight: 400;
+    padding-top: 0px;
+  }
+  .logo{
+    gap: 30px;
+  }
+  .container{
+    gap: 30px !important;
+  }
+  
+  .video{
+    background-image: url(./images/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0px 250px 0px;
+    position: relative;
+}
+.section-heading{
+    /* display: flex;
+    align-items:center ;
+    justify-content: center; */
+    margin: 0 auto;
+}
+.section-heading h6 {
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+.section-heading h2 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 56px;  
+}
+.video{
+    max-height: 500px;
+}
+.video-content .video-frame img {
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-content .video-frame a {
+    position: absolute;
+    left: 50%;
+    top: 120%;
+    transform: translate(-26px, -26px);
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 52px;
+    color: #f35525;
+    outline: 15px solid rgba(254, 85, 37, 0.5);
+    font-size: 18px;
+}

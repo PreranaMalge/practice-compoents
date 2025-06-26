@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    
+}
+header ul li a{
+    text-decoration: none;
+    color:white;
+}
+.hero-section{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom right, 
+        rgba(255, 0, 0, 0.404), 
+        rgba(0, 0, 255, 0.5)
+    ), 
+    url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+.main .heading{
+    color: white;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.main .para{
+    color: white;
+    margin-left: 100px;
+    padding-bottom: 20px;
+}
+.main .btn{
+    color:white;
+    background-color: orange;
+    padding: 10px;
+    
+}
+.image{
+    width: 30px;
+    height: 30px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: navy;
+    color: white;  
+}
+.line{
+    display: flex;
+    float: right;
+    gap: 10px;
+    margin-right: -83px;
+    
+}
+.logo{
+    display: flex;
+    float: left;
+    gap: 10px;
+    margin-right: 450px;
+}
+.parent{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.btn{
+    margin-left: 100px;
+}
+.edu{
+    color: white;
+    font-size: 20px;
+}
+.card-container{
+    display: flex;
+    gap: 40px;
+    margin-left: 100px;
+    margin-top:20px;
+}

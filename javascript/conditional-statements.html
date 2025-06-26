@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conditional Statements in JS</h1>
+    <p id="id"></p>
+
+    <script>
+
+        let a=2;
+        if(a==2){
+            document.getElementById('id').innerHTML = "Hello";
+        }
+        else{
+            document.getElementById('id').innerHTML = "Not Hello";
+        }
+
+        //output hello 
+
+        //for loop vs while loop
+
+        let num=12345;
+        // Q. print this number in reverse order.
+
+        while(num > 0){
+            console.log(num % 10);
+            console.log(num / 10);
+        }
+
+        //output
+        //5
+        //4
+        //3
+        //2
+        //1
+    </script>
+</body>
+</html>

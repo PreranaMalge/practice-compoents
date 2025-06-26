@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions in JS</h1>
+    <p id="demo"></p>
+    
+    <script>
+        //normal fun in js
+
+        function show(){
+            console.log("show fun ");
+        }
+        show();
+
+        //es6 fun / arrow fun
+
+        const show1 = ()=>{
+            console.log('show1 fun ');
+        }
+        show1();
+
+        //example 1
+
+        const outer =()=>{
+            let b=11;
+            console.log(b);
+        }
+        console.log(outer);
+        console.log(outer());
+
+        // outer is  print then whole object inside it.
+        //whereas outer() print the value of the fun which is 11/
+
+
+        //example 2
+
+        function display(a){
+            return a;
+        }
+        document.getElementById('demo').innerHTML = display(9);
+
+        //show 9 on frontend.
+
+        // ******************************If you don't give datatype then it is known as 'undeclared'.**********************************'
+
+        //example 3
+
+       var a=10;
+       function first(){
+        var b=11;
+            function second(){
+                var c=12;
+                console.log(a,b,c);
+            }
+            second();
+       }
+       first();    //=>10,11,12
+
+       //example 4
+
+       const outerFunction =(a)=>{
+            let b=10;
+
+            const innerFunction =()=>{
+                let sum = a+b;
+                console.log("the sum is "+sum);
+
+            }
+            innerFunction();
+       }
+       outerFunction(9); // the sum is 19.
+
+    </script>
+</body>
+</html>
