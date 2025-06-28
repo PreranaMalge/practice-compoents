@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #202123;
+  }
+
+ 
+  .nav {
+    background: #202123;
+    padding: 10px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  
+  .logo img {
+    width: 190px;
+    display: block;
+  }
+
+  
+  .search-input {
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+  }
+  .search-input input {
+    width: 100%;
+    background: #27292a;
+    height: 46px;
+    border-radius: 23px;
+    border: none;
+    color: #eee;
+    font-size: 14px;
+    padding: 0 15px 0 45px;
+  }
+  .search-input i {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translateY(-50%);
+    color: #666;
+  }
+
+ 
+  .navitems ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+  .navitems a,
+  .navitems button {
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 15px;
+  }
+  .navitems a.active,
+  .navitems a:hover {
+    color: #a53e49;
+  }
+
+ 
+  .navitems button {
+    background: transparent;
+    border: 2px solid #4a4b4c;
+    border-radius: 23px;
+    padding: 8px 22px;
+    cursor: pointer;
+  }
+  .navitems button:hover {
+    background: #a53e49;
+    border-color: #a53e49;
+    color: #fff;
+  }
+
+  .banner {
+    background-image: url('./images/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+
+  }
+  
+  .banner h1, .banner h6 {
+    color: white;
+  }
+  
