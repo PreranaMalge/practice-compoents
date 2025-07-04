@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins,sans-serif;
+}
+header{
+    background-image: url(./images/slide-01.jpg);
+    padding-top: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.logo ul {
+ display: flex;
+ gap: 25px;
+ padding-top: 15px;
+}
+.logo ul li{
+    list-style-type: none;
+}
+.logo ul li a{
+   text-decoration: none;
+   color: white;
+}
+.logo ul li a:hover{
+    color:#754c49
+}
+ .logo .active{
+    color:#754c49
+}
+.logo .button{
+    color:white;
+    background-color: #43ba80;
+    padding: 10px 5px ;
+    border-radius: 5px;
+}
+.logo img{
+    padding-left: 30px;
+}
+header h1 em{
+    color:#ff4f1c ;
+}
+.line{
+    width: 80px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 40px;
+    opacity: 1;
+    visibility: visible;
+}
+.buttons{
+    display: inline;
+}
+.green-button{
+    font-size: 14px;
+    color: #fff;
+    background-color: #43ba7f;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.orange-button{
+    font-size: 14px;
+    color: #fff;
+    background-color:#ff4f1c;
+    padding: 12px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.custom-card h1{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.custom-card {
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    
+  }
+  
+  .custom-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .cta{
+    background-image: url(./images/cta-bg.jpg);
+  }

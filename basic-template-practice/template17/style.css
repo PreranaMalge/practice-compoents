@@ -1,0 +1,128 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+   font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    background-color: #232323;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header ul{
+    display: flex;
+    gap: 20px;
+}
+.header ul li{
+    list-style-type: none;
+}
+.header ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+.header h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.header h2 em{
+    color: #e7423e;
+}
+.hero{
+    background-image: url(./images/slide_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.hero .heading{
+    text-transform: uppercase;
+    color:#e94a4c;
+    padding-top: 200px;
+}
+.hero h1{
+    color: #fff;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+.card-section{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.card-section h6{
+    text-transform: uppercase;
+    color: #e7423e;
+    font-size: 15px;
+    
+}
+.card-section h4{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.custom-cards .title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.custom-cards .title h5{
+    color: #206083;
+}
+.custom-cards .title p{
+    font-size: 20px;
+}
+.reviews{
+    display: flex;
+    justify-content: space-around;
+}
+.about h2{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-left: 110px;
+}
+.bottom h6{
+    color:#286186 ;
+}
+.bottom p em{
+    color:#4983c3 ;
+}
+.purchase{
+    display: flex;
+    justify-content: space-around;
+    background-color:#f7f7f7 ;
+    width: 1000px;
+    height: 100px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+.purchase h4{
+    color:#3f556a ;
+}
+.purchase p{
+    color: gray;
+
+}
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer p{
+    text-transform: uppercase;
+}
+.footer p em{
+    color:#ffc5c7;
+}
+.bottom ul li:hover{
+    color: #c0615b;
+}
