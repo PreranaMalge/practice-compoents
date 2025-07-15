@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    background-color: #fafafa;
+    height: 70px;  
+    padding-top: 20px;
+    position: sticky;
+    top:0;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-around; 
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #2d2e33;
+    font-weight: 500;
+}
+nav ul li a:active{
+    color:#fd9898;
+}
+nav ul li a:hover{
+    color:#fd9898;
+}
+nav .button{
+    color:#fff;
+    background-color: #fd9898;
+    border-radius: 25px;
+}
+nav .button:hover{
+    color:#fff;
+    background-color: #0ca2e6;
+    border-radius: 25px;
+}
+main .left{
+    background-image: url(./images/baner-dec-left.png);
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+main .left h6{
+    text-transform: uppercase;
+    color: #fd9898;
+
+}
+.best {
+   color: #0ca2e6;
+}
+em{
+    color: #fd9898;
+}
+.left .button1{
+    background-color: #0ca2e6;
+    color: #fff;
+    border-radius: 25px;
+    padding: 8px 8px;
+    border: none;
+    width: 150px;
+}
+.left .button1:hover{
+    background-color: #fd9898;
+}
+.left .icon{
+    color:#fff;
+    background-color: #fd9898;
+    border-radius: 50%;
+    padding: 15px;
+}
+.left .number{
+    color: #fd9898;
+}
+.services{
+    color: #fff7f7;
+    text-transform: uppercase;
+}
+.heading{
+    text-transform: capitalize;
+}
+.card img{
+    width:50px;
+    margin: 0;
+    display: block;
+    border: none;
+}
+.card h6{
+    color: #fd9898;
+}
+
+.pricing-card {
+    border-radius: 20px;
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-card h1 {
+    font-size: 3rem;
+    color: #007bff;
+  }
+  
+  .pricing-card p {
+    margin: 8px 0;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .pricing-card .btn {
+    border-radius: 30px;
+    font-weight: 600;
+  }
+  .starter-card{
+    display: flex;
+  }
+
+  .subscribe{ 
+    background-image: url(./images/subscribe-bg.png);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .subscribe input{
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .button2{
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+  }
+  .icon1{
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+.button3{
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 20px;
+    padding: 2px 10px;
+    border: none;
+}
+
